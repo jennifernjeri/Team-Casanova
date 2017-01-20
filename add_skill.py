@@ -1,14 +1,20 @@
 # from tabulate import tabulate
-def get_skill_id():
-    id = int(input("Enter id of skill:"))
-    return id
+class Skills(object):
+	def __init__(self):
+		self.skill = {}
 
-def get_skill_name():
-    name = input("Enter name of skill:")
-    return name
-def add_skill():
-    skill = {}
-    skill.update({'id': get_skill_id(), 'value': get_skill_name()})
-    return skill
+	def get_skill_id(self):
+	    id = int(input("Enter id of skill:"))
+	    return id
 
-print add_skill()
+	def get_skill_name(self):
+	    name = input("Enter name of skill:")
+	    return name
+
+	def add_skill(self):
+	    self.skill.update({'id': get_skill_id(), 'value': get_skill_name()})
+
+	def view_skill(self):
+		return skill
+
+
