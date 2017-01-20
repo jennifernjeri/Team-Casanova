@@ -1,5 +1,6 @@
+# from tabulate import tabulate
 def get_skill_id():
-    id = input("Enter id of skill:")
+    id = int(input("Enter id of skill:"))
     return id
 
 def get_skill_name():
@@ -7,7 +8,7 @@ def get_skill_name():
     return name
 def add_skill():
     skill = {}
-    skill_id = int(get_skill_id())
-    skill_name = get_skill_name()
-    skill = {skill_id:[skill_name, False]}
+    skill.update({'id': get_skill_id(), 'value': get_skill_name()})
     return skill
+
+print add_skill()
