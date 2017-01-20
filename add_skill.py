@@ -15,6 +15,6 @@ class Skills(object):
 	    self.skill.update({'id': get_skill_id(), 'value': get_skill_name()})
 
 	def view_skill(self):
-		return skill
+		return self.skill
 
 
